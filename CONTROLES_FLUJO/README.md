@@ -76,4 +76,4 @@ nombre="JOSE"
 nombre.lower()#convierte el texto en minuscula
 ```
 
-#anthony te amo
+#anthony te am
