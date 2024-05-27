@@ -75,3 +75,5 @@ nombre.opper()#convierte el texto en mayuscula
 nombre="JOSE"
 nombre.lower()#convierte el texto en minuscula
 ```
+
+#anthony te amo
