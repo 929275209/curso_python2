@@ -9,11 +9,37 @@
 # nueva_lista=nuevo_texto.split(" ")
 # print(nueva_lista)
 
-texto_largo="loquitas_.mp4"
-nuevo_texto=texto_largo.split(" ")
-print(",".join(nuevo_texto))
-#join-es el metodo para unirelementos en un solo texto
+# texto_largo="loquitas_.mp4"
+# nuevo_texto=texto_largo.split(" ")
+# print(",".join(nuevo_texto))
+# #join-es el metodo para unirelementos en un solo texto
+
+# numeros=[1,2,3]
+# print(id(numeros))
+# otra_lista=numeros
+# print(id(otra_lista))
 
 
+#DATOS  ESTRUCTURADOS
 
+# lista_original=[1,2,3,4]
+# copia_lista=lista_original
+
+# lista_original[-1]=15
+# print(copia_lista)
+
+
+#CREAR UN PROGRAMA  QUE RECIBA UNA LISTA DESORDENADA Y  MUESTRE POR
+# TERMINAL LA LISTA ORDENA Y LA LISTA PREVIA A SER ORDENADA
+#1
+# lista=[2,5,1,4,3]
+# lista.sort()
+# print(lista)
+
+# #2
+# lista=[2,5,1,4,3]
+# copia_lista=lista.copy()
+# copia_lista.sort()
+# print(lista)
+# print(copia_lista)
 
