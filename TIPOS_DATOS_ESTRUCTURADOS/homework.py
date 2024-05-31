@@ -52,3 +52,6 @@ print(mascotas)
 print("\nLista con el tercer registro editado:")
 print(mascotas_editado)
 
+
+
+#

@@ -106,8 +106,22 @@ print(compara)
 lista=[1,3,4,5,6,]
 lista[0]=2
 print(lista)
+```
 
+#El director del tecnologico jose maria arguedas
+desea actualizar el proceso academico de registro de notas de sus alumnos 
+con las siguientes aclaraciones:
+-los docemtes podran poner las notas pero no editarlas
+solo los coordinadores del programa de estudio podran dar el acceso de edicion de nota
+previa peticion del docente encargado
+los estudiantes solo podran ver sus notas  y porcentaje de la asistencia esta sera
+registrada atraves de un sensor detector en el ingreso del instituto y puerta del aula que se les asignara
+la asignacion d aulas  le realizara el secretario academic,si ubiera una observacion por parte de alunmos a su nota o asistencia este lo podra
+realizar a traves de la aplicacion en observacion que sera enviado a su docente y coordinador y programa de estudio
 
+# yo como docente
+# puedo hacer la solicitud la edicion de notas
+# para correjir las  notas las notas erroneas
 
 
 
