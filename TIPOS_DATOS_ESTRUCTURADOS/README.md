@@ -119,9 +119,30 @@ registrada atraves de un sensor detector en el ingreso del instituto y puerta de
 la asignacion d aulas  le realizara el secretario academic,si ubiera una observacion por parte de alunmos a su nota o asistencia este lo podra
 realizar a traves de la aplicacion en observacion que sera enviado a su docente y coordinador y programa de estudio
 
-# yo como docente
-# puedo hacer la solicitud la edicion de notas
-# para correjir las  notas las notas erroneas
+#yo como docente
+
+#puedo hacer la solicitud la edicion de notas
+
+#para correjir las  notas las notas erroneas
+
+## LISTAS Y DICIONARIOS POR COMPRENCION
+es una tecnica pythonica que nos permite crear listas y diccionarios bubles y deciciones
+> [!NOTE] 
+> 
+> ***VLC*** value loop condicion - valor bucle condicion
+```python
+#lista por comprencion
+texto="1,4,8,9,6"
+nueva_lista=[int(n) for n in texto.split(",") if int (n)%2==0]
+print(nueva_lista
+
+```
+```python
+lista_amigos=["abel","edith","antoni","rut"]
+diccionario={amigo:len(amigo) for amigo in lista_amigos}
+print(diccionario)
+```
+
 
 
 

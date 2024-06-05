@@ -43,3 +43,35 @@
 # print(lista)
 # print(copia_lista)
 
+#crear una lista de numeros enteros del sigguiente texto
+
+# texto="1,4,8,9,6"
+# convertir=texto.split(",")
+# print(convertir)
+
+# texto="1,4,8,9,6"
+# nueva_lista=[]
+# for n in texto.split(","):
+#     nueva_lista.append(int(n))
+#     print(nueva_lista)
+
+###ejercicio aplicando "vlc"
+
+# texto="1,4,8,9,6"
+# nueva_lista=[int(n) for n in texto.split(",") if int (n)%2==0]
+# print(nueva_lista)
+
+
+#diccionarios por comprencion
+
+# lista_amigos=["abel","edith","antoni","rut"]
+# diccionario=()
+# for _,v in enumerate(lista_amigos):
+#     diccionario[v]=len(v)
+# print(diccionario)
+
+###ejercicio aplicando "vlc"
+
+lista_amigos=["abel","edith","antoni","rut"]
+diccionario={amigo:len(amigo) for amigo in lista_amigos}
+print(diccionario)
