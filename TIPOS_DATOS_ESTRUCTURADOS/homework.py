@@ -55,7 +55,7 @@
 
  ## 3. un empresario de alquiler de autos desea guardar  una base de datos
 #    #la informacion de sus vehiculos,proceso qu desea automatizar con un sistema informatico
-#    las accines que puede realizar el empresario son ver la lista de autos que 
+#    las acciones que puede realizar el empresario son ver la lista de autos que 
 # tiene , podra tambien actualizar la lista y agregar un nuevo vehiculo.
 
 #casos de uso

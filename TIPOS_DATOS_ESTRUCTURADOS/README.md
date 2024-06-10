@@ -138,6 +138,7 @@ print(nueva_lista
 
 ```
 ```python
+#lista por comprencion
 lista_amigos=["abel","edith","antoni","rut"]
 diccionario={amigo:len(amigo) for amigo in lista_amigos}
 print(diccionario)
