@@ -165,27 +165,15 @@ saludar(*datos)
 
 ##FUNCIONES INTERNAS DE PYTHON(tarea)
 
-#### 🎈print
-Utilizado para imprimir texto o variables en la consola.
-#### 🎈len
- Retorna la longitud de un objeto iterable como una lista, tupla, cadena, etc.
-#### 🎈type
- Retorna el tipo de un objeto.
-#### 🎈input
- Lee la entrada del usuario desde la consola.
-#### 🎈range
- Genera una secuencia de números.
-#### 🎈open
- Abre un archivo en un modo específico.
-#### 🎈str, int, float
- Convierten un objeto a cadena, entero o flotante, respectivamente.
-#### 🎈sum
- Retorna la suma de todos los elementos en un iterable.
-#### 🎈max, min
- Retorna el valor máximo o mínimo de un iterable.
-#### 🎈sorted
- Retorna una lista ordenada a partir de un iterable.
-#### 🎈abs
- Retorna el valor absoluto de un número.
-#### 🎈range
- Retorna una secuencia inmutable de números.
+- `print()` Utilizado para imprimir texto o variables en la consola. 
+ - `len()`Retorna la longitud de un objeto iterable como una lista, tupla, cadena, etc.
+- `type()`Retorna el tipo de un objeto.
+- `input()`Lee la entrada del usuario desde la consola.
+- `range`Genera una secuencia de números.
+- `open`Abre un archivo en un modo específico.
+- `str, int, float`Convierten un objeto a cadena, entero o flotante, respectivamente.
+- `sum`Retorna la suma de todos los elementos en un iterable.
+- `max, min`Retorna el valor máximo o mínimo de un iterable.
+- `sorted`Retorna una lista ordenada a partir de un iterable.
+- `abs`Retorna el valor absoluto de un número.
+- `range`Retorna una secuencia inmutable de números.
