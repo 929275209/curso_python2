@@ -46,8 +46,10 @@ saludo()
 ### RETORNAR UNA FUNCION
 
 las funciones pueden retornar (o devolver) un valor.
+
+>ejemplo
 ```python
-def uno()]:
+def uno():
     return 1
 uno()
 ```
@@ -56,6 +58,7 @@ No confundir **print( )** con **return**, el valor retornado por **return** nos 
 
 ### RETORNAR MULTIPLES VALORES
 El secreto es hacerlo mediante un tipo de dato estructurado.
+>ejemplo
 ```python
 #tupla
 def varios():
@@ -69,3 +72,120 @@ def nombre():
 nombre()
 
 ```
+**return**- tipo de 
+       tipo de dato estrcuturado 
+
+ **print**- mensaje  
+
+ ### PARAMETROS Y ARGUMENTOS 
+ Si una funcion no dispusiera d valores de entrada estaria limityada en su actuacion, es por ello que los **_parametros*_** nos permiten variar los datos que consumen una funcion para obtener distintos resultados 
+ ejemplo
+ crear una funcon que recive un valor umerico y devuelve su raiz cuadrada
+ >ejemplo
+ ```python
+def sqrt(valor):
+    return valor**(1/2)
+#NOTA: En este caso el valor 4 es un argumento de la funcion
+    sqrt(4)
+ ```   
+ cuando llamamos a una funcion con **_argumentos_** los valores de estos argumentos  se copia en su correspondiente **_parametro_** dentro de la funcion
+ >ejemplo
+ ```python
+def suma(a,b,c):
+    return a+b+c
+suma(4,5,6)
+ ```
+ ### ARGUMENTOS NOMINALES
+ En esta aproxnimacion los argumentos no son copiados en  orden, si no que, **_se asigna por nombre a cada parametro_** ello nos permiten evitar el problema de conocer o recuordar cual es el orden de los parametros en la definicion dela funcion , para utilizar basta  realizar una asignacion dse cada argumento  en la propia llamda a la funcion.
+ >ejemplo
+ ```python
+def build_cpu(familia,num_core,,frecuencia):
+    print(f"""
+        la cpu es de la familia {familia},
+        con {num_core} cores y con una
+        frecuencia de {frecuencia}
+    """)
+    #haciendo uso de argumentos nominales
+build_cpu(num_core=4,familia="intel",frecuencia=2.7)
+ ```
+### ARGUMENTOS POSICIONALES
+ Los argumentos  son copiados en un oreden especifico, en este caso debemos conocer o recordar cual es el orden de los parametros.
+ >ejemplo
+ ```python
+def build_cpu(familia,num_core,,frecuencia):
+    print(f"""
+        la cpu es de la familia {familia},
+        con {num_core} cores y con una
+        frecuencia de {frecuencia}
+    """)
+    #haciendo uso de argumentos nominales
+build_cpu("intel",4,2,7)
+ ```
+### PARAMETROS POR DEFECTO
+Es posible especificar **_valores por defecto_** con los parametros de una funcion, en el caso que no se proporcione un valor al argumento en la llamada/ojecucion el parametro correspondiente tomaran el valor definid por defecto 
+>ejemplo
+```python
+def alumnos(nombre,apellido,estado="aprobado"):
+
+alumnos("rut","castillo")
+alumnos("edith","parinango")
+```
+### DESEMPAQUETADO/EMPAQUETADO DE ARGUMENTOS(tarea)
+### Empaquetado de Argumentos 
+El empaquetado de argumentos ocurre cuando se pasa un número variable de argumentos a una función y estos se agrupan en una sola variable, generalmente una tupla. Esto se realiza precediendo el nombre del parámetro con un asterisco (*). 
+> ejemplo
+```python
+def sumar(*args):
+    total = 0
+    for num in args:
+        total += num
+    return total
+
+resultado = sumar(1, 2, 3, 4, 5) 
+# Empaquetado de argumentos
+print(resultado) 
+ # Salida: 15
+```
+
+### Desempaquetado de Argumentos 
+El desempaquetado de argumentos es cuando se pasa una estructura de datos, como una tupla o una lista, a una función y se desempaqueta en argumentos individuales. Esto se realiza precediendo el nombre de la estructura de datos con un asterisco (*).
+> ejemplo
+```python
+def saludar(nombre, apellido):
+    print(f"Hola {nombre} {apellido}!")
+
+datos = ("Juan", "Pérez")
+saludar(*datos)  
+# Desempaquetado de argumentos
+
+```
+
+
+
+
+##FUNCIONES INTERNAS DE PYTHON(tarea)
+
+#### 🎈print
+Utilizado para imprimir texto o variables en la consola.
+#### 🎈len
+ Retorna la longitud de un objeto iterable como una lista, tupla, cadena, etc.
+#### 🎈type
+ Retorna el tipo de un objeto.
+#### 🎈input
+ Lee la entrada del usuario desde la consola.
+#### 🎈range
+ Genera una secuencia de números.
+#### 🎈open
+ Abre un archivo en un modo específico.
+#### 🎈str, int, float
+ Convierten un objeto a cadena, entero o flotante, respectivamente.
+#### 🎈sum
+ Retorna la suma de todos los elementos en un iterable.
+#### 🎈max, min
+ Retorna el valor máximo o mínimo de un iterable.
+#### 🎈sorted
+ Retorna una lista ordenada a partir de un iterable.
+#### 🎈abs
+ Retorna el valor absoluto de un número.
+#### 🎈range
+ Retorna una secuencia inmutable de números.
