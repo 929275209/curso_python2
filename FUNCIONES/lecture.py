@@ -51,22 +51,34 @@
 #crear una funcion que reciba como parametro un nombre y edad  
 # de una persona mi funcion debera retornar un diccionario con  los datos 
 # luego mostral por terminal  el valor de retorno de mi funcion
-nombre="edith"
-edad=22
-def persona(nombre,edad):
-    return {
-        "nombre":nom,
-        "edad":edad
-    }
+# nombre="edith"
+# edad=22
+# def persona(nombre,edad):
+#     return {
+#         "nombre":nom,
+#         "edad":edad
+#     }
 
-nombre="edith"
-edad=22
-def persona(nombre,edad):
-    return dict(
-        nombre:nom,
-        edad:edad
-    )
-print(persona(nombre,edad))
-        
+# nombre="edith"
+# edad=22
+# def persona(nombre,edad):
+#     return dict(
+#         nombre:nom,
+#         edad:edad
+#     )
+# print(persona(nombre,edad))
+
+
+
+#ejercicio con empaquetado
+def suma(*valores):
+    nueva_lisa=list(valores)
+    nueva_lista[0]=10
+    print(nueva_lista)
+suma(2,4,6,3,4,)
 
  
+###empaquetado y desempaquetado nominales
+def alumnos(**kwargs):
+    print(kwargs)
+alumnos(nombre="edith",apellido="parinango",edad=20)

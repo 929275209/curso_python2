@@ -13,7 +13,7 @@ En programacion una funcion es un sub-programa, es una estructura que nos permit
 - Una vez creada la funcion podremos solicitar su ejecucion **_invocando_** la funcion por su **_nombre_**.
 
 ## DEFINIR UNA FUNCION EN PYTHON
-para definir una funcion en python primero utlizaremos la palabra reservada **_def_** seguida por el **_nombre_** de la funcion . A continuacion especificaremos  los **_parametros_** con **_( )_** si es una funcion sin parametros, **_(a)_** si es una funcion con parametros, si se tuviera mas de un paramtro iran separados por **_,_** , finalizaremos la linia con **_:_**, en la siguiente linia  sin olvidar el identado, comenzara el **_cuerpo_** de la funcion(microprograma) que puede contener 1 o mas sentencias, finalmente debera **_retornar_** con la palabra reservada **_return_**
+para definir una funcion en python primero utlizaremos la palabra reservada `def` seguida por el `nombre`de la funcion . A continuacion especificaremos  los `parametros` con `()`si es una funcion sin parametros, `(a)` si es una funcion con parametros, si se tuviera mas de un paramtro iran separados por **_,_** , finalizaremos la linia con **_:_**, en la siguiente linia  sin olvidar el identado, comenzara el **_cuerpo_** de la funcion(microprograma) que puede contener 1 o mas sentencias, finalmente debera **_retornar_** con la palabra reservada **_return_**
 >[!TIP]
 Como retorno tambien se puede utilizar la **_funcion interna_**, **_print()_**, para depuracion de codigo no es recomendable usarlo en produccion.
 
@@ -131,7 +131,7 @@ alumnos("rut","castillo")
 alumnos("edith","parinango")
 ```
 ### DESEMPAQUETADO/EMPAQUETADO DE ARGUMENTOS(tarea)
-### Empaquetado de Argumentos 
+### Empaquetado de ARGUMENTOS 
 El empaquetado de argumentos ocurre cuando se pasa un número variable de argumentos a una función y estos se agrupan en una sola variable, generalmente una tupla. Esto se realiza precediendo el nombre del parámetro con un asterisco (*). 
 > ejemplo
 ```python
@@ -146,8 +146,7 @@ resultado = sumar(1, 2, 3, 4, 5)
 print(resultado) 
  # Salida: 15
 ```
-
-### Desempaquetado de Argumentos 
+### Desempaquetado de ARGUMENTOS
 El desempaquetado de argumentos es cuando se pasa una estructura de datos, como una tupla o una lista, a una función y se desempaqueta en argumentos individuales. Esto se realiza precediendo el nombre de la estructura de datos con un asterisco (*).
 > ejemplo
 ```python
@@ -159,15 +158,28 @@ saludar(*datos)
 # Desempaquetado de argumentos
 
 ```
+### empaquetado y desempaquetado NOMINALES
+>ejemplo
+```python
+def alumnos(**kwargs):
+    print(kwargs)
+alumnos(nombre="edith",apellido="parinango",edad=20)
+```
+>ejemplo
+```python
+#reemplazando nombre
+def alumnos(**kwargs):
+    kwargs["nombre"]="abel"
+    print(kwargs)
+alumnos(nombre="edith",apellido="parinango",edad=20)
+```
 
 
-
-
-##FUNCIONES INTERNAS DE PYTHON(tarea)
+##  FUNCIONES INTERNAS DE PYTHON(tarea)
 
 - `print()` Utilizado para imprimir texto o variables en la consola. 
- - `len()`Retorna la longitud de un objeto iterable como una lista, tupla, cadena, etc.
-- `type()`Retorna el tipo de un objeto.
+- `len()`Retorna la longitud de un objeto iterable como una lista, tupla, cadena, etc.
+- `type()` Retorna el tipo de un objeto.
 - `input()`Lee la entrada del usuario desde la consola.
 - `range`Genera una secuencia de números.
 - `open`Abre un archivo en un modo específico.
@@ -177,3 +189,10 @@ saludar(*datos)
 - `sorted`Retorna una lista ordenada a partir de un iterable.
 - `abs`Retorna el valor absoluto de un número.
 - `range`Retorna una secuencia inmutable de números.
+
+## TIPOS DE FUNCIONES
+
+#### FUNCIONES ANONIMAS(funciones lambda)
+#### FUNCIONES CLOSURE
+#### FUNCIONES CALLBACK
+#### PROGRAMACION FUNCIONAL
