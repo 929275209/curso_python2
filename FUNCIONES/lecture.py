@@ -70,15 +70,39 @@
 
 
 
-#ejercicio con empaquetado
-def suma(*valores):
-    nueva_lisa=list(valores)
-    nueva_lista[0]=10
-    print(nueva_lista)
-suma(2,4,6,3,4,)
+# #ejercicio con empaquetado
+# def suma(*valores):
+#     nueva_lisa=list(valores)
+#     nueva_lista[0]=10
+#     print(nueva_lista)
+# suma(2,4,6,3,4,)
 
  
-###empaquetado y desempaquetado nominales
-def alumnos(**kwargs):
-    print(kwargs)
-alumnos(nombre="edith",apellido="parinango",edad=20)
+# ###empaquetado y desempaquetado nominales
+# def alumnos(**kwargs):
+#     print(kwargs)
+# alumnos(nombre="edith",apellido="parinango",edad=20)
+
+#ejercico de lambda
+
+# saludo=lambda:"hola"
+# print(saludo())
+
+# saludo=lambda n,a:f"hola, {n} , {a}"
+# print(saludo("edith","parinango"))
+
+
+##crear un programa anonimo que reciba  como parametro una lista de 5 numeros 
+#y retorne dos listas una con los numeros pares y otra con numeros impares
+# lista=[1,4,6,5,7,9,]
+# pares=lambda l:[n for n in lista if n%2==0]
+# impares=lambda l:[n for n in lista if n%2!=0]
+# print(pares(lista))
+# print(impares(lista))
+
+def mensaje(m):
+    print(m)
+def pedir_nombre():
+    nombre=input("ingresa tu nombra")
+    return nombre
+mensaje(pedir_nombre())

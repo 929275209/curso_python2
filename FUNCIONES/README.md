@@ -192,7 +192,45 @@ alumnos(nombre="edith",apellido="parinango",edad=20)
 
 ## TIPOS DE FUNCIONES
 
-#### FUNCIONES ANONIMAS(funciones lambda)
-#### FUNCIONES CLOSURE
-#### FUNCIONES CALLBACK
-#### PROGRAMACION FUNCIONAL
+#### -FUNCIONES ANONIMAS(funciones lambda)
+Son funciones sin nombre que se puedan utlizarde forma anonima en un programa
+```python
+lambda:"hola"
+#normal
+def saludo():
+    return "hola"
+```
+#### -FUNCIONES CLOSURE
+Es una funcion que hace referencia a variables de su ambito externo en el mmento de su definicion
+```python
+
+```
+#### -FUNCIONES CALLBACK
+```python
+
+```
+#### -PROGRAMACION FUNCIONAL
+La programcion funcional no requiere que sepas como se desarrolla y ejecuta el procesamiento de la informacion
+```python
+lista=[3,4,6,7,2]
+def num_minimo(1):
+    minimo=1[0]
+    for n in 1:
+        if n < minimo:
+            minimo=n
+    return minimo
+#programacion funcional
+min(lista)
+```
+#### 🎈averiguar sobre map(), filter(), reduce()
+### `map()`
+ toma una funcion y un iterable como argumentos y aplica la funcion a cada elemento del iterable, devolviendo un nuevo iterable con los resultados.
+`sintaxis.- map(funcion,iterable)`
+
+### `filter()` 
+toma una funcion que devuelve un valor booleano(true o false)y un iterable, y devuelve un nuevo iterable con los elmentos del iterable para los cuales la funcion devuelve true.
+`sintaxis.- filter(funcion,iterable)`
+
+### `reduce()`
+ aplica una funcion de dos argumentos de forma acumulativa a los elemenmtos de un iterable, reduciendolos a un solo valor.
+`sintaxis.- reduce(funcion,iterable)`
